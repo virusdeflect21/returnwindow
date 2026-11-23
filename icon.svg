@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ReturnWindow logo">
+  <rect width="512" height="512" rx="96" fill="#1e4636"/>
+  <g stroke="#f6f1e7" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="132" y="132" width="248" height="248" rx="24"/>
+  </g>
+  <g stroke="#e8b04c" stroke-width="22" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 340 V252 a26 26 0 0 1 52 0 v88"/>
+    <path d="M258 326 h44 M282 304 l28 22 -28 22"/>
+  </g>
+  <circle cx="352" cy="160" r="10" fill="#e8b04c"/>
+</svg>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ReturnWindow — keep track of return deadlines and refund follow-ups for your purchases. Local-first: your records stay on your device.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1e4636">
+  <title>ReturnWindow</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="app-header">
+    <div class="app-header-inner">
+      <a class="brand" href="#/today" aria-label="ReturnWindow home">
+        <svg class="brand-mark" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+          <rect width="512" height="512" rx="96" fill="var(--green)"/>
+          <g stroke="#f6f1e7" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="132" y="132" width="248" height="248" rx="24"/>
+          </g>
+          <g stroke="#e8b04c" stroke-width="22" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M200 340 V264 a26 26 0 0 1 52 0 v76"/>
+            <path d="M258 326 h44 M282 304 l28 22 -28 22"/>
+          </g>
+        </svg>
+        <span class="brand-name">ReturnWindow</span>
+      </a>
+      <p class="brand-tag">Return deadlines, made actionable</p>
+    </div>
+  </header>
+
+  <main id="main" class="app-main" tabindex="-1">
+    <noscript>
+      <div class="container">
+        <div class="card notice">
+          <h1>JavaScript is required</h1>
+          <p>ReturnWindow stores your records locally in your browser, which needs JavaScript. No data ever leaves your device.</p>
+        </div>
+      </div>
+    </noscript>
+  </main>
+
+  <nav class="tabbar" aria-label="Main navigation">
+    <div class="tabbar-inner">
+      <a class="tab" href="#/today" data-route="today">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v15H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="12" cy="15" r="2.2" fill="currentColor"/></svg>
+        <span>Today</span>
+      </a>
+      <a class="tab" href="#/list" data-route="list">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <span>Purchases</span>
+      </a>
+      <a class="tab tab-add" href="#/edit/new" data-route="edit" aria-label="Add purchase">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+        <span>Add</span>
+      </a>
+      <a class="tab" href="#/data" data-route="data">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c4-2 12-2 16 0M4 6v12c4 2 12 2 16 0V6M4 12c4-2 12-2 16 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <span>Data</span>
+      </a>
+    </div>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="dialog" class="dialog" aria-labelledby="dialog-title"></dialog>
+
+  <script type="module" src="js/app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "returnwindow",
+  "version": "0.1.0",
+  "description": "Local-first return deadline and refund follow-up tracker (not a warranty vault).",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "virusdeflect21",
+  "engines": {
+    "node": ">=18.11.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "check": "node scripts/check.mjs"
+  }
+}
